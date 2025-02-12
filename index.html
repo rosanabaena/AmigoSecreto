@@ -19,9 +19,13 @@
         
         <section class="input-section">
             <h2 class="section-title">Digite o nome dos seus amigos</h2>
-            <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
-                <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
+            
+            <div class="input-container">    
+                <div class="input-wrapper">
+                    <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
+                    <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
+                </div>
+                
             </div>
            
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
@@ -32,6 +36,8 @@
                     <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
                     Sortear amigo
                 </button>
+                <img class="button-restart" src="assets/reiniciar.png" alt="Reiniciar jogo"
+                    title="Reiniciar Amigo Secreto" onclick="reiniciarJogo()">
             </div>
         </section>
     </main>
