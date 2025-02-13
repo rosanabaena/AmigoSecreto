@@ -51,7 +51,8 @@ function validaNomeDigitado(nomeDigitado){
     }
 
     //valida se o nome digitado possui apenas letras
-    if (!/^[a-zA-Z\s]+$/.test(nome)){
+    //if (/^((\b[A-zÀ-ú']{2,40}\b)\s*){2,}$/gm.test(nome)){  //(!/^[a-zA-Z\s]+$/.test(nome))
+    if (/^([a-zA-ZÀ-ú']{2,40}(\s+|$)){2,}$|\d/.test(nome)){
         alert(`Nome ${nome} inválido! O nome deve conter apenas letras!`);
         return;    
     }
