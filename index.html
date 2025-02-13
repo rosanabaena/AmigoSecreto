@@ -36,12 +36,18 @@
                     <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
                     Sortear amigo
                 </button>
-                <img class="button-restart" src="assets/reiniciar.png" alt="Reiniciar jogo"
-                    title="Reiniciar Amigo Secreto" onclick="reiniciarJogo()">
+                <div id="hiden-elements" class="button-hidden-container">
+                    <button id="auto-sorteio" class="button-draw hidden-button" onclick="trocarAmigo()"
+                        aria-label="Sortear amigo secreto" disabled>
+                        Devolver amigo sorteado
+                    </button>
+                    
+                </div>           
             </div>
         </section>
     </main>
 
     <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </body>
 </html>
